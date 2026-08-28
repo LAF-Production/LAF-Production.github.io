@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAF PRODUCTION | Official Website</title>
+    <!-- Menghubungkan ke file CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- HEADER & LOGO NAVIGASI -->
+    <header>
+        <div class="logo">
+            <img src="logo-laf.png" alt="LAF Logo" class="nav-logo-img">
+            LAF <span>PRODUCTION</span>
+        </div>
+        <nav>
+            <button class="nav-btn active" onclick="scrollToPanel(0)">Beranda</button>
+            <button class="nav-btn" onclick="scrollToPanel(1)">Tentang Kami</button>
+            <button class="nav-btn" onclick="scrollToPanel(2)">Film & Karya</button>
+            <button class="nav-btn" onclick="scrollToPanel(3)">Podcast</button>
+            <button class="nav-btn" onclick="scrollToPanel(4)">Contact Us</button>
+        </nav>
+    </header>
+
+    <!-- CONTAINER SLIDER GESER KESAMPING -->
+    <div class="horizontal-slider" id="slider">
+
+        <!-- PANEL 1: BERANDA -->
+        <div class="panel">
+            <div class="panel-content">
+                <img src="logo-laf.png" alt="LAF Production Big Logo" class="hero-logo">
+                <h1>Mojokerto-Based Production</h1>
+                <p>Rumah produksi independen yang berfokus pada pembuatan film pendek, dokumenter, dan konten audio sinematik.</p>
+            </div>
+        </div>
+
+        <!-- PANEL 2: TENTANG KAMI -->
+        <div class="panel bg-darker">
+            <div class="panel-content">
+                <h2>Tentang <span>LAF Production</span></h2>
+                <p>LAF.Production merupakan rumah produksi independen yang berfokus pada pengembangan konten kreatif berbasis komunitas, budaya, dan potensi lokal.</p>
+                <div>
+                </div>
+            </div>
+        </div>
+
+        <!-- PANEL 3: FILM & KARYA -->
+        <div class="panel">
+            <div class="panel-content">
+                <h2>Film & <span>Karya Sinema</span></h2>
+                <p>Karya dan project pilihan LAF Production.</p>
+
+                <!-- DIBIARKAN KOSONG UNTUK SAAT INI -->
+
+                <div style="margin-top: 25px;">
+                </div>
+            </div>
+        </div>
+
+        <!-- PANEL 4: PODCAST -->
+        <div class="panel bg-darker">
+            <div class="panel-content">
+                <!-- LOGO POLING DILETAKKAN DI SINI -->
+                <img src="logo-PoLing.png" alt="Logo Podcast Keliling" class="poling-logo">
+                
+                <h2>( PoLing ) <span>Podcast Keliling</span></h2>
+                <p>Sebagai proyek perdana, kami menghadirkan Podcast Keliling, sebuah program video podcast yang mengangkat kisah inspiratif para pelaku kreatif di Mojokerto dengan konsep unik: setiap episode direkam di coffee shop yang berbeda.</p>
+
+                <div style="margin-top: 25px;">
+
+                </div>
+            </div>
+        </div>
+
+      <!-- PANEL 5: CONTACT US -->
+        <div class="panel">
+            <div class="panel-content">
+                <h2>Contact <span>Us</span></h2>
+                <p style="margin-bottom: 25px;">Tertarik untuk berkolaborasi atau diskusi projek bersama tim LAF Production?</p>
+
+                <div class="admin-card">
+                    <div class="admin-icon">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </div>
+                    <h3>Hubungi Admin Direct</h3>
+                    <p>Klik tombol di bawah untuk terhubung langsung ke WhatsApp Admin official kami.</p>
+
+                    <a href="https://wa.me/6285647107099?text=Halo%20Admin%20LAF%20Production,%20saya%20ingin%20bertanya%20seputar%20kolaborasi/project" target="_blank" class="btn-wa">
+                        <i class="fa-brands fa-whatsapp"></i> Chat WhatsApp Admin
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Menghubungkan ke file JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
