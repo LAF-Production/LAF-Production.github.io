@@ -263,3 +263,33 @@ p {
     overflow-y: auto; /* Tambahkan scrollbar vertikal jika konten terlalu tinggi */
     max-height: 100vh;
 }
+/* Pengaturan logo PoLing agar responsif dan tidak tertutup header */
+.poling-logo {
+    max-width: 180px;      /* Batasi lebar maksimal logo */
+    width: 60%;            /* Menyesuaikan dengan lebar layar */
+    height: auto;          /* Mencegah gambar terdistorsi */
+    margin-top: 40px;      /* Memberi jarak atas agar tidak tertutup header */
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+/* Penyesuaian khusus untuk layar HP */
+@media (max-width: 768px) {
+    .poling-logo {
+        max-width: 140px;  /* Ukuran lebih proporsional di HP */
+        margin-top: 60px;  /* Dorong logo lebih ke bawah di layar HP */
+    }
+}
+/* 1. Memberi ruang di bagian atas seluruh isi panel agar tidak tertutup navbar */
+.panel-content {
+    padding-top: 120px !important; /* Dorong seluruh isi konten ke bawah navbar */
+    box-sizing: border-box;
+}
+
+/* 2. Mengatur ukuran logo PoLing agar pas dan proporsional */
+img[src*="logo-PoLing"] {
+    max-width: 160px; /* Batasi lebar maksimal logo */
+    height: auto;
+    display: block;
+    margin: 0 auto 20px auto; /* Buat logo berada di tengah-tengah */
+}
